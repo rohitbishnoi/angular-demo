@@ -6,9 +6,16 @@
     <title></title>
 </head>
 
-<body>
+<body ng-app="">
 
+<input type="number" ng-model="quantity">
+<input type="number" ng-model="price">
+<p>Total = {{ (quantity * price) | currency }}</p>
+<hr/>
 
-</body>
+<p>{{ 'this text is gonna display in uppercase' | uppercase }}</p>
+
+other inbuilt filter are
+
 </body>
 </html>
