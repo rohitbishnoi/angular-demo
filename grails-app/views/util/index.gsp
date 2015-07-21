@@ -7,7 +7,9 @@
 
 <body>
 <div ng-app="">
-    <p>My first expression: {{ 5 + 5 }}</p>
+    <p>Name: <input type="text" ng-model="name"></p>
+    <p ng-bind="name"></p>
+    %{--<p> {{name}} </p>--}%
 </div>
 </body>
 </html>
