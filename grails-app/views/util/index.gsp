@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -6,9 +5,14 @@
     <title></title>
 </head>
 
-<body>
+<body ng-app="">
 
-
-</body>
+<div ng-app="" ng-init="names=['James','John','Peter', 'Ema']">
+    <ul>
+        <li ng-repeat="x in names">
+            {{ x }}
+        </li>
+    </ul>
+</div>
 </body>
 </html>
